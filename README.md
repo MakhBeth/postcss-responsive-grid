@@ -12,7 +12,7 @@ What's that? "**R**eally, **A**nother **O**ne **R**esponsive **G**rid???" or **G
 
 [PostCSS]: https://github.com/postcss/postcss
 [ci-img]:  https://travis-ci.org/makhbeth/postcss-responsive-grid.svg
-[ci]:      https://travis-ci.org/ve piace il nome GROAR <- Really, Another One Responsive Grid ???/postcss-responsive-grid
+[ci]:      https://travis-ci.org/makhbeth/postcss-responsive-grid
 
 ```css
 .foo {
