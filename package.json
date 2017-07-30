@@ -1,0 +1,38 @@
+{
+  "name": "postcss-responsive-grid",
+  "version": "0.0.0",
+  "description": "PostCSS plugin that help you to manage a column based grid",
+  "keywords": [
+    "postcss",
+    "css",
+    "postcss-plugin",
+    "flex-box",
+    "grid",
+    "css-grid",
+    "design"
+  ],
+  "author": "Davide Di Pumpo <davidemak@gmail.com>",
+  "license": "MIT",
+  "repository": "makhbeth/postcss-responsive-grid",
+  "bugs": {
+    "url": "https://github.com/makhbeth/postcss-responsive-grid/issues"
+  },
+  "homepage": "https://github.com/makhbeth/postcss-responsive-grid",
+  "dependencies": {
+    "postcss": "^6.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "eslint-config-postcss": "^2.0.2",
+    "jest": "^20.0.0"
+  },
+  "scripts": {
+    "test": "jest && eslint *.js"
+  },
+  "eslintConfig": {
+    "extends": "eslint-config-postcss/es6",
+    "env": {
+      "jest": true
+    }
+  }
+}
