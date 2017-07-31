@@ -24,13 +24,18 @@
   "devDependencies": {
     "eslint": "^3.19.0",
     "eslint-config-postcss": "^2.0.2",
-    "jest": "^20.0.0"
+    "jest": "^20.0.0",
+    "onchange": "^3.2.1",
+    "postcss-cli": "^4.1.0"
   },
   "scripts": {
-    "test": "jest && eslint *.js"
+    "test": "jest || true && eslint *.js || true",
+    "postcss": "postcss ./dev/unparsed.css -o ./dev/parsed.css -u postcss-responsive-grid",
+    "test-css": "npm run postcss && npm run test",
+    "dev": "npm run postcss && onchange '*.js' 'src' 'dev/unparsed.css' -- npm run test-css"
   },
   "eslintConfig": {
-    "extends": "eslint-config-postcss/es6",
+    "extends": "eslint-config-postcss/es5",
     "env": {
       "jest": true
     }

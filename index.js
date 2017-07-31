@@ -8,7 +8,9 @@ module.exports = postcss.plugin('postcss-responsive-grid', (opts = {}) => {
 
     return function (root, result) {
 
-        // Transform CSS AST here
+        root.walkDecls(declaration => {
+            // declaration.value = declaration.value.split('').reverse().join('');
+        });
 
     };
 });

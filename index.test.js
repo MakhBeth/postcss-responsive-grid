@@ -1,6 +1,6 @@
 var postcss = require('postcss');
 
-var plugin = require('./');
+var plugin = require('./index.js');
 
 function run(input, output, opts) {
     return postcss([ plugin(opts) ]).process(input)
@@ -10,10 +10,14 @@ function run(input, output, opts) {
         });
 }
 
-/* Write tests here
+it('basic row', () => {
+    return run(`
+        .row{
+            groar-row: container;
+        }
+    `, `
+        .row{
 
-it('does something', () => {
-    return run('a{ }', 'a{ }', { });
+        }
+    `, { });
 });
-
-*/
