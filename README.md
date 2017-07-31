@@ -1,6 +1,6 @@
 # THIS PROJECT IS NOT READY TO BE USED
 ## Wait for it. You can start subscribing if you want
-What's that? "**R**eally, **A**nother **O**ne **R**esponsive **G**rid???" or **GROAR** if you prefer, is simply a set of utilities to manage column based design. It will work with both flex and grids and we will try to support not only modern browsers but also IE10+ (hopefully)
+What's that? "**R**eally, **A**nother **O**ne **R**esponsive **G**rid???" or **GROAR** if you prefer, is simply a set of utilities to manage column based design. It will work with grids rules and we will try to support not only modern browsers but also IE10+ (hopefully)
 
 
 
@@ -15,14 +15,19 @@ What's that? "**R**eally, **A**nother **O**ne **R**esponsive **G**rid???" or **G
 [ci]:      https://travis-ci.org/makhbeth/postcss-responsive-grid
 
 ```css
-.foo {
-    /* Input example */
+.grid {
+  groar-display: grid-full;
+  groar-layout:
+      .col-a 3,
+      .col-b 4,
+      .col-c auto,
+      .col-d full;
 }
 ```
 
 ```css
-.foo {
-  /* Output example */
+.grid {
+  /* MAGIC WILL GO HERE 🎩 */
 }
 ```
 
